@@ -5,7 +5,10 @@
 
     npm install
 
-## 运行httpserver 
+## 代码中修改目标网址
+## 运行
 
-    node src/httpserver.js
+    node src/browser.js
+
+若控制台显示不全，可以在命令前加nohup然后再nohup.out里看到html及markdown的输出。
     

@@ -6,7 +6,7 @@
   // const jianshu = 'jianshu';
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('http://www.srcmini.com/62008.html');
+  await page.goto('https://www.matataki.io/p/9331');
 
   // Get the "viewport" of the page, as reported by the page.
   const dimensions = await page.evaluate(async () => {
