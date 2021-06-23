@@ -1,0 +1,301 @@
+Dimensions: {
+  name: 'clippedContent',
+  title: '如何解决Puppeteer TimeoutError：导航超时超过30000 ms - Node.js - srcmini',
+  html: '\n' +
+    '<header class="header">\n' +
+    '\t<div class="container">\n' +
+    '\t\t<div class="logo"><a href="http://www.srcmini.com" title="srcmini - 专业IT技术分析博客"><img src="http://www.srcmini.com/wp-content/uploads/2019/05/3f6c2fe234edb13.png" alt="srcmini - 专业IT技术分析博客" width="140" height="32">srcmini</a></div>\t\t\t\t<ul class="site-nav site-navbar">\n' +
+    '\t\t\t<li id="menu-item-358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-358"><a href="http://www.srcmini.com/">首页</a></li>\n' +
+    '<li id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-96"><a href="http://www.srcmini.com/questions">问答 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '<li id="menu-item-9336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9336"><a href="http://www.srcmini.com/mobile-dev">移动开发 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '<li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-86"><a href="http://www.srcmini.com/database">数据库 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-90"><a href="http://www.srcmini.com/backend-development">后端 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '<li id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-94"><a href="http://www.srcmini.com/resources">资源下载 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '<li id="menu-item-5176" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5176"><a href="http://www.srcmini.com/artificial-intelligence">人工智能 <i class="fa fa-angle-down"></i></a>\n' +
+    '\n' +
+    '</li>\n' +
+    '\t\t\t\t\t\t\t<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>\n' +
+    '\t\t\t\t\t</ul>\n' +
+    '\t\t\t\t<div class="topbar">\n' +
+    '\t\t\t\n' +
+    '\t\t\t\t\t\t\t\t\t\t\t<a href="javascript:;" class="signin-loader">Hi, 请登录</a>\n' +
+    '\t\t\t\t&nbsp; &nbsp; <a href="javascript:;" class="signup-loader">我要注册</a>\n' +
+    '\t\t\t\t&nbsp; &nbsp; <a href="http://www.srcmini.com/reset-password">找回密码</a>\n' +
+    '\t\t\t\t\t</div>\n' +
+    '\t\t\t\t\t\t\n' +
+    '\t\t\t</div>\n' +
+    '</header>\n' +
+    '<div class="site-search">\n' +
+    '\t<div class="container">\n' +
+    '\t\t<form method="get" class="site-search-form" action="http://www.srcmini.com/"></form>\t</div>\n' +
+    '</div>\t<div class="breadcrumbs">\n' +
+    '\t\t<div class="container">当前位置：<a href="http://www.srcmini.com">srcmini</a> <small>&gt;</small> <a href="http://www.srcmini.com/node-js">Node.js</a> <small>&gt;</small> 正文</div>\n' +
+    '\t</div>\n' +
+    '<section class="container" style="height: auto !important;">\n' +
+    '\t<div class="content-wrap" style="height: auto !important;">\n' +
+    '\t<div class="content" style="height: auto !important; min-height: 0px !important;">\n' +
+    '\t\t\t\t<header class="article-header">\n' +
+    '\t\t\t<h1 class="article-title"><a href="http://www.srcmini.com/62008.html">如何解决Puppeteer TimeoutError：导航超时超过30000 ms</a></h1>\n' +
+    '\t\t\t<div class="article-meta">\n' +
+    '\t\t\t\t<span class="item">2020-05-03 21:41:12</span>\n' +
+    '\t\t\t\t\t\t\t\t\t\t\t\t<span class="item">分类：<a href="http://www.srcmini.com/node-js" rel="category tag">Node.js</a></span>\n' +
+    '\t\t\t\t<span class="item post-views">阅读(1081)</span>\t\t\t\t<span class="item">评论(0)</span>\n' +
+    '\t\t\t\t<span class="item"></span>\n' +
+    '\t\t\t</div>\n' +
+    '\t\t</header>\n' +
+    '\t\t\t\t<article class="article-content" style="height: auto !important;">\n' +
+    '\t\t\t\t\t\t<div class="code-block code-block-2" style="margin: 8px auto 8px 0; text-align: left; display: block; clear: both;">\n' +
+    '\n' +
+    '\n' +
+    '<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-5520426928387543" data-ad-slot="7133299073" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 728px; background-color: transparent; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:728px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="280" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5520426928387543&amp;output=html&amp;h=280&amp;slotname=7133299073&amp;adk=1536673018&amp;adf=3626922878&amp;pi=t.ma~as.7133299073&amp;w=728&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1624439071&amp;rafmt=1&amp;psa=0&amp;format=728x280&amp;url=http%3A%2F%2Fwww.srcmini.com%2F62008.html&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1624439070328&amp;bpp=35&amp;bdt=1857&amp;idt=800&amp;shv=r20210621&amp;cbv=%2Fr20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=4092457177300&amp;frm=20&amp;pv=1&amp;ga_vid=712299309.1624439071&amp;ga_sid=1624439071&amp;ga_hid=1834336506&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_java=0&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=0&amp;u_nmime=0&amp;adx=36&amp;ady=338&amp;biw=800&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;oid=3&amp;pvsid=3080498279777727&amp;pem=335&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1366%2C0%2C0%2C0%2C800%2C600&amp;vis=1&amp;rsz=o%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=23&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=n0BfToSY9w&amp;p=http%3A//www.srcmini.com&amp;dtd=825" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!2" data-google-query-id="CPLuuo6zrfECFZvETAId6yQNDg" data-load-complete="true"></iframe></ins></ins></ins>\n' +
+    '</div>\n' +
+    '\n' +
+    '<h2>本文概述</h2>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<ul>\n' +
+    ' <li><strong><a href="#heading_0" rel="nofollow" target="_self">A.全局选项卡</a></strong></li> \n' +
+    ' <li><strong><a href="#heading_1" rel="nofollow" target="_self">B.在当前页面上</a></strong></li>\n' +
+    '</ul>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>在我的工作和个人项目中完成多项任务的自动化过程中, 我决定使用Puppeteer, 而不是原来的PhantomJS。由于广告, 图像等原因, 包含大量内容的页面最常见的问题之一是加载时间, 页面加载超过30000ms(30秒)后会引发异常(特别是TimeoutError)完全。</p>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>要解决此问题, 你将有2个选项, 要么增加配置中的超时时间, 要么完全删除它。就个人而言, 我更喜欢取消限制, 因为我知道与我合作的页面最终有一天会加载。</p><div class="code-block code-block-6" style="margin: 8px auto 8px 0px; text-align: left; display: block; clear: both; width: 728px; height: 350px;">\n' +
+    '\n' +
+    '\n' +
+    '<ins class="adsbygoogle" style="display: block; height: 350px; width: 728px;" data-ad-client="ca-pub-5520426928387543" data-ad-slot="8716191093" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_2_expand" style="display: inline-table; border: none; height: 350px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 728px; background-color: transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display: block; border: none; height: 350px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 728px; background-color: transparent; overflow: hidden;"><iframe id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 728px; height: 350px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="350" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5520426928387543&amp;output=html&amp;h=280&amp;slotname=8716191093&amp;adk=1844953974&amp;adf=3673338224&amp;pi=t.ma~as.8716191093&amp;w=728&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1624439071&amp;rafmt=1&amp;psa=0&amp;format=728x280&amp;url=http%3A%2F%2Fwww.srcmini.com%2F62008.html&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1624439070363&amp;bpp=9&amp;bdt=1892&amp;idt=993&amp;shv=r20210621&amp;cbv=%2Fr20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C728x280&amp;nras=1&amp;correlator=4092457177300&amp;frm=20&amp;pv=1&amp;ga_vid=712299309.1624439071&amp;ga_sid=1624439071&amp;ga_hid=1834336506&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_java=0&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=0&amp;u_nmime=0&amp;adx=36&amp;ady=936&amp;biw=800&amp;bih=600&amp;scr_x=0&amp;scr_y=0&amp;oid=3&amp;pvsid=3080498279777727&amp;pem=335&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1366%2C0%2C0%2C0%2C800%2C600&amp;vis=1&amp;rsz=o%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=23&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;fsb=1&amp;xpc=MLs5ejNITM&amp;p=http%3A//www.srcmini.com&amp;dtd=1010" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!3" data-google-query-id="CPrbyY6zrfECFe_FTAIdmJkBCg" data-load-complete="true"></iframe></ins></ins></ins>\n' +
+    '</div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>在本文中, 我将向你简要介绍两种绕过此限制的方法。</p>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<h2 id="heading_0">A.全局选项卡</h2>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>当我在同一选项卡中浏览多个页面时, 我更喜欢的选项是删除用于浏览的选项卡上的超时限制。例如, 要删除限制, 你应该添加：</p>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<pre class="wp-block-code prettyprint"><code><span class="pln">await page</span><span class="pun">.</span><span class="pln">setDefaultNavigationTimeout</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln"> </span></code></pre>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>在Puppeteer的已创建页面上可用的setDefaultNavigationTimeout方法允许你定义选项卡的超时, 并希望将其作为第一个参数(以毫秒为单位)。值为0表示时间不受限制。以下代码段显示了如何在实际示例中执行此操作：</p>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<pre class="wp-block-code prettyprint"><code><span class="com">// Require puppeteer</span><span class="pln">\n' +
+    `</span><span class="kwd">const</span><span class="pln"> puppeteer </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'puppeteer'</span><span class="pun">);</span><span class="pln">\n` +
+    '\n' +
+    '</span><span class="pun">(</span><span class="pln">async </span><span class="pun">()</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln">\n' +
+    '    </span><span class="com">// Create an instance of the chrome browser</span><span class="pln">\n' +
+    '    </span><span class="com">// But disable headless mode !</span><span class="pln">\n' +
+    '    </span><span class="kwd">const</span><span class="pln"> browser </span><span class="pun">=</span><span class="pln"> await puppeteer</span><span class="pun">.</span><span class="pln">launch</span><span class="pun">({</span><span class="pln">\n' +
+    '        headless</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">\n' +
+    '    </span><span class="pun">});</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Create a new page</span><span class="pln">\n' +
+    '    </span><span class="kwd">const</span><span class="pln"> page </span><span class="pun">=</span><span class="pln"> await browser</span><span class="pun">.</span><span class="pln">newPage</span><span class="pun">();</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Configure the navigation timeout</span><span class="pln">\n' +
+    '    await page</span><span class="pun">.</span><span class="pln">setDefaultNavigationTimeout</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Navigate to some website e.g Our Code World</span><span class="pln">\n' +
+    `    await page</span><span class="pun">.</span><span class="kwd">goto</span><span class="pun">(</span><span class="str">'http://ourcodeworld.com'</span><span class="pun">);</span><span class="pln">\n` +
+    '\n' +
+    '    </span><span class="com">// Do your stuff</span><span class="pln">\n' +
+    '    </span><span class="com">// ...</span><span class="pln">\n' +
+    '</span><span class="pun">})();</span></code></pre>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<h2 id="heading_1">B.在当前页面上</h2>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>另外, 对于特定页面, 如果你处理多个页面使用不同的变量, 则应该能够在page.goto方法的配置对象中作为选项来指定上下文限制：</p>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    `<pre class="wp-block-code prettyprint"><code><span class="pln">await page</span><span class="pun">.</span><span class="kwd">goto</span><span class="pun">(</span><span class="str">'https://ourcodeworld.com'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">\n` +
+    `    waitUntil</span><span class="pun">:</span><span class="pln"> </span><span class="str">'load'</span><span class="pun">,</span><span class="pln"> </span><span class="com">// Remove the timeout</span><span class="pln">\n` +
+    '    timeout</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln">\n' +
+    '</span><span class="pun">});</span></code></pre>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>以下代码段在一个真实的示例中显示了如何执行此操作：</p><div class="code-block code-block-4" style="margin: 8px auto 8px 0; text-align: left; display: block; clear: both;">\n' +
+    '\n' +
+    '\n' +
+    '<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-5520426928387543" data-ad-slot="6988994691" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"></ins></ins></ins>\n' +
+    '</div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<pre class="wp-block-code prettyprint"><code><span class="com">// Require puppeteer</span><span class="pln">\n' +
+    `</span><span class="kwd">const</span><span class="pln"> puppeteer </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pun">(</span><span class="str">'puppeteer'</span><span class="pun">);</span><span class="pln">\n` +
+    '\n' +
+    '</span><span class="pun">(</span><span class="pln">async </span><span class="pun">()</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln">\n' +
+    '    </span><span class="com">// Create an instance of the chrome browser</span><span class="pln">\n' +
+    '    </span><span class="com">// But disable headless mode !</span><span class="pln">\n' +
+    '    </span><span class="kwd">const</span><span class="pln"> browser </span><span class="pun">=</span><span class="pln"> await puppeteer</span><span class="pun">.</span><span class="pln">launch</span><span class="pun">({</span><span class="pln">\n' +
+    '        headless</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">\n' +
+    '    </span><span class="pun">});</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Create a new page</span><span class="pln">\n' +
+    '    </span><span class="kwd">const</span><span class="pln"> page </span><span class="pun">=</span><span class="pln"> await browser</span><span class="pun">.</span><span class="pln">newPage</span><span class="pun">();</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Configure the navigation timeout</span><span class="pln">\n' +
+    `    await page</span><span class="pun">.</span><span class="kwd">goto</span><span class="pun">(</span><span class="str">'https://ourcodeworld.com'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">\n` +
+    `        waitUntil</span><span class="pun">:</span><span class="pln"> </span><span class="str">'load'</span><span class="pun">,</span><span class="pln"> </span><span class="com">// Remove the timeout</span><span class="pln">\n` +
+    '        timeout</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln">\n' +
+    '    </span><span class="pun">});</span><span class="pln">\n' +
+    '\n' +
+    '    </span><span class="com">// Navigate to some website e.g Our Code World</span><span class="pln">\n' +
+    `    await page</span><span class="pun">.</span><span class="kwd">goto</span><span class="pun">(</span><span class="str">'http://ourcodeworld.com'</span><span class="pun">);</span><span class="pln">\n` +
+    '\n' +
+    '    </span><span class="com">// Do your stuff</span><span class="pln">\n' +
+    '    </span><span class="com">// ...</span><span class="pln">\n' +
+    '</span><span class="pun">})();</span></code></pre>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<p>编码愉快！</p>\n' +
+    '\n' +
+    '\n' +
+    '<div class="code-block code-block-3" style="margin: 8px auto 8px 0; text-align: left; display: block; clear: both;">\n' +
+    '\n' +
+    '\n' +
+    '<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-5520426928387543" data-ad-slot="2541664980" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"></ins></ins></ins>\n' +
+    '</div>\n' +
+    '\t\t</article>\n' +
+    '\t\t\t\t\t\t\t\t            <div class="post-actions">\n' +
+    '            \t<a href="javascript:;" etap="like" class="post-like action action-like" data-pid="62008"><i class="fa fa-thumbs-o-up"></i>赞(<span>0</span>)</a>            \t<a href="javascript:;" class="action action-rewards" data-event="rewards"><i class="fa fa-jpy"></i> 打赏</a>            \t            </div>\n' +
+    '        \t\t<div class="post-copyright">未经允许不得转载：<a href="http://www.srcmini.com">srcmini</a> » <a href="http://www.srcmini.com/62008.html">如何解决Puppeteer TimeoutError：导航超时超过30000 ms</a></div>\t\t\n' +
+    '\t\t\t\t\t<div class="action-share"><div class="bdsharebuttonbox bdshare-button-style0-24" data-bd-bind="1624439075813">\n' +
+    '<span>分享到：</span>\n' +
+    '<a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>\n' +
+    '<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>\n' +
+    '<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>\n' +
+    '<a class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>\n' +
+    '<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>\n' +
+    '<a class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>\n' +
+    '<a class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a>\n' +
+    '<a class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>\n' +
+    '<a class="bds_more" data-cmd="more">更多</a> <span>(</span><a class="bds_count" data-cmd="count" title="累计分享0次">0</a><span>)</span>\n' +
+    '</div>\n' +
+    '</div>\n' +
+    '\t\t\n' +
+    '\t\t<div class="article-tags">标签：<a href="http://www.srcmini.com/tag/node-js%e5%bc%80%e5%8f%91" rel="tag">Node.js开发</a><a href="http://www.srcmini.com/tag/puppeteer" rel="tag">Puppeteer</a><a href="http://www.srcmini.com/tag/timeouterror" rel="tag">TimeoutError</a><a href="http://www.srcmini.com/tag/%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96" rel="tag">性能优化</a></div>\n' +
+    '\t\t\n' +
+    '\t\t\n' +
+    '\t\t            <nav class="article-nav">\n' +
+    '                <span class="article-nav-prev">上一篇<br><a href="http://www.srcmini.com/61998.html" rel="prev">使用appJar(基于Tkinter的UI)使用Python创建非常简单的图形用户界面</a></span>\n' +
+    '                <span class="article-nav-next">下一篇<br><a href="http://www.srcmini.com/62006.html" rel="next">如何使用Lena.js使用JavaScript向浏览器中的图像添加图像滤镜(照片效果)</a></span>\n' +
+    '            </nav>\n' +
+    '        \n' +
+    '\t\t<div class="asb asb-post asb-post-02">\n' +
+    '<ins class="adsbygoogle" style="display: block; height: 436px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-5520426928387543" data-ad-slot="4105641364" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:436px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:436px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"></ins></ins></ins>\n' +
+    '</div>\t\t<div class="relates"><div class="title"><h3>相关推荐</h3></div><ul><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/68464.html">如何将Mongodb数据库与Node.js连接起来？</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/67531.html">是什么导致我的博客页面上如此长的等待时间？</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/66875.html">WordPress SEO：55个技巧，可在12个月内使自然流量增长78%以上</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/64588.html">WordPress Visual Composer减慢网站速度</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/64519.html">WordPress速度优化问题</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/63840.html">删除Avada主题中未使用的脚本</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/63603.html">如果与LESS一起使用，@import真的对性能不好吗？</a></li><li>&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<a href="http://www.srcmini.com/63579.html">使用wordpress中的自定义SQL查询通过wp_get_nav_menu_items提高wp_posts中的查询性能</a></li></ul></div>\t\t\t\t<div class="title" id="comments">\n' +
+    '\t<h3>评论 <small>抢沙发</small></h3>\n' +
+    '</div>\n' +
+    '<div id="respond" class="no_webshot">\n' +
+    '\t\t<div class="comment-signarea">\n' +
+    '\t\t<h3 class="text-muted">评论前必须登录！</h3>\n' +
+    '\t\t<p>\n' +
+    '\t\t\t<a href="javascript:;" class="btn btn-primary signin-loader">立即登录</a> &nbsp; \n' +
+    '\t\t\t<a href="javascript:;" class="btn btn-default signup-loader">注册</a>\n' +
+    '\t\t</p>\n' +
+    '\t</div>\n' +
+    '\t</div>\n' +
+    '\t</div>\n' +
+    '\t</div>\n' +
+    '\t</section>\n' +
+    '\n' +
+    '\n' +
+    '<footer class="footer">\n' +
+    '\t<div class="container">\n' +
+    '\t\t\t\t\t\t\t<div class="fcode">\n' +
+    '\t\t\t\t<a href="http://www.srcmini.com/about">关于我们</a><em style="margin:0 3px">·</em>\n' +
+    '\n' +
+    '<a href="http://www.srcmini.com/archive">文章归档</a><em style="margin:0 3px">·</em>\n' +
+    '\n' +
+    '<a href="http://www.srcmini.com/links">友情链接</a><em style="margin:0 3px">·</em>\n' +
+    '\n' +
+    '<a href="http://www.srcmini.com/contract">联系我们</a><em style="margin:0 3px">·</em>\n' +
+    '\n' +
+    '<a href="http://www.srcmini.com/privacy-policy">隐私政策</a>\t\t\t</div>\n' +
+    '\t\t\t\t<p>© 2019-2021   <a href="http://www.srcmini.com">srcmini</a> &nbsp; <a href="http://www.srcmini.com/sitemap">网站地图</a></p>\n' +
+    '\t\t<a href="https://www.cnzz.com/stat/website.php?web_id=1276692575" target="_blank" title="站长统计">站长统计</a>\t</div>\n' +
+    '</footer>\n' +
+    '\n' +
+    '\t\n' +
+    '\t\n' +
+    '\n' +
+    '<div class="rollbar rollbar-rb"><ul></ul></div>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '<canvas width="800" height="600" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '\t\t\t\t\t<div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;"><a class="highslide-loading" title="点击关闭" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;">正在加载中...</a></div>',
+  base_url: 'http://www.srcmini.com',
+  url: 'http://www.srcmini.com/62008.html',
+  image_sizes: {
+    'http://www.srcmini.com/wp-content/uploads/2019/05/3f6c2fe234edb13.png': [ [Object] ],
+    'http://www.srcmini.com/wp-content/uploads/2019/02/dafffea94c06c3e.png': [ [Object] ]
+  },
+  anchor_names: [],
+  convert_to: 'markdown',
+  stylesheets: null
+}
