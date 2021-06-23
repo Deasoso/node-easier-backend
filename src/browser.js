@@ -1,18 +1,12 @@
-( async () => {const puppeteer = require('puppeteer');
-  // import HtmlToMd from './htmltomd/HtmlToMd.js';
+(async () => {
+  const HtmlToMd = require('../htmltomd/HtmlToMd');
+
+  const puppeteer = require('puppeteer');
   // console.log(window);
   // const jianshu = 'jianshu';
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto('http://www.srcmini.com/62008.html');
-
-  // var htmlToMdParser_;
-
-  // function htmlToMdParser() {
-  // 	if (htmlToMdParser_) return htmlToMdParser_;
-  // 	htmlToMdParser_ = new HtmlToMd();
-  // 	return htmlToMdParser_;
-  // }
 
   // Get the "viewport" of the page, as reported by the page.
   const dimensions = await page.evaluate(async () => {
@@ -378,12 +372,12 @@
   // console.log(inputElement);
   console.log('Dimensions:', dimensions.bbb);
 
-  // const endmd = await htmlToMdParser().parse(`<div>${dimensions.bbb.body_html}</div>`, {
-  //   baseUrl: dimensions.bbb.baseUrl,
-  //   anchorNames: [],
-  // });
+  const endmd = await HtmlToMd.parse(`<div>${dimensions.bbb.html}</div>`, {
+    baseUrl: dimensions.bbb.baseUrl,
+    anchorNames: [],
+  });
 
-  // console.log(endmd);
+  console.log(endmd);
 
   await browser.close();
 })();
