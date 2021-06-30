@@ -5,7 +5,6 @@
 
     npm install
 
-## 代码中修改目标网址
 ## 运行
 
     node src/browser.js
