@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "an easy backend",
   "dependencies": {
-    "moleculer": "^0.14.14"
+    "moleculer": "^0.14.14",
+    "moleculer-web": "^0.10.0"
   },
   "devDependencies": {},
   "scripts": {

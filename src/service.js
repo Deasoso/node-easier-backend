@@ -1,22 +1,30 @@
 const { ServiceBroker } = require("moleculer");
+const HTTPServer = require("moleculer-web");
 
-// Create a ServiceBroker
+// Create broker
 const broker = new ServiceBroker();
 
-// Define a service
-broker.createService({
-    name: "math",
-    actions: {
-        add(ctx) {
-            return Number(ctx.params.a) + Number(ctx.params.b);
-        }
-    }
-});
+// Load service
+broker.loadService("./src/math");
 
-// Start the broker
-broker.start()
-    // Call the service
-    .then(() => broker.call("math.add", { a: 5, b: 3 }))
-    // Print the response
-    .then(res => console.log("5 + 3 =", res))
-    .catch(err => console.error(`Error occured! ${err.message}`));
+// Create the "gateway" service
+broker.createService({
+    // Define service name
+    name: "gateway",
+    // Load the HTTP server
+    mixins: [HTTPServer],
+  
+    settings: {
+      routes: [
+        {
+          aliases: {
+            // When the "GET /products" request is made the "listProducts" action of "products" service is executed
+            "GET /products": "math.products"
+          }
+        }
+      ]
+    }
+  });
+
+// Start broker
+broker.start();
