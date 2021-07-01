@@ -9,5 +9,9 @@
 
     node src/service.js
 
-若控制台显示不全，可以在命令前加nohup然后再nohup.out里看到html及markdown的输出。
+然后在
+    
+    localhost:3000/products
+    
+看到微服务的返回
     
